@@ -20,6 +20,7 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -40,7 +41,7 @@ module.exports = {
         fonts: [
           {
             family: `Work Sans`,
-            variants: [`300`, `800`]
+            variants: [`300`, `800`],
           },
         ],
       },
