@@ -1,19 +1,29 @@
 import React from "react"
+
+import styled from "@emotion/styled"
+import { css } from "@emotion/core"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+const H1 = styled.h1`
+  font-size: 68px;
+  margin: 45px 0;
+`
+
+const H2 = styled.h2`
+  font-size: 42px;
+`
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div>
-      <h1>Justin Daining</h1>
-      <h2>Testimonials</h2>
-      <p>lorem ipsum woot woot</p>
-      <h2>Experience</h2>
-      <h2>Tools</h2>
-      <h2>Results</h2>
-      <h2>Contact</h2>
-    </div>
+    <H1>Justin Daining</H1>
+    <H2>Testimonials</H2>
+    <H2>Experience</H2>
+    <H2>Tools</H2>
+    <H2>Results</H2>
+    <H2>Contact</H2>
   </Layout>
 )
 
