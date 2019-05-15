@@ -7,6 +7,9 @@ const Page = styled.div`
   font-size: 18px;
   margin: 0 auto;
   max-width: 600px;
+  & p {
+    line-height: 28px;
+  }
 `
 
 const Layout = ({ children }) => (

@@ -1,15 +1,12 @@
-// TODO Write Testimonials Component
-// {
-// allContentJson {
-//   edges {
-//     node {
-//       kudos
-//     }
-//   }
-// }
-// }
 import React from "react"
+
+import styled from "@emotion/styled"
+
 import { useStaticQuery, graphql } from "gatsby"
+
+const Kudo = styled.p`
+  margin: 0 0 40px;
+`
 
 const Kudos = () => {
   const data = useStaticQuery(graphql`
@@ -27,7 +24,7 @@ const Kudos = () => {
   return (
     <div>
       {data.allContentJson.edges.map(item =>
-        item.node.kudos.map((kudo, key) => <div key={key}>{kudo}</div>)
+        item.node.kudos.map((kudo, key) => <Kudo key={key}>{kudo}</Kudo>)
       )}
     </div>
   )
