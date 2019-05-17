@@ -6,6 +6,10 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const Kudo = styled.p`
   margin: 0 0 40px;
+  &:before,
+  &:after {
+    content: '"';
+  }
 `
 
 const Kudos = () => {
